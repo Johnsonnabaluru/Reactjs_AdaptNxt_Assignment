@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+main {
+  width: 100%;
+  padding: 10px;
+  margin-left: 0; /* Changed from -20px to 0 */
+}
+
+.sidebar {
+  color: gray;
+  height: 100vh;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box shadow */
+  background-color: rgba(255, 252, 252, 0.7);
+  position: fixed; /* Added position fixed */
+  top: 0;
+  left: 0;
+  transition: width 0.5s; /* Added transition effect */
+}
+
+.sidebar.open {
+  width: 300px; /* Added width for open state */
+}
+
+.sidebar.closed {
+  width: 50px; /* Added width for closed state */
+}
+
+.top_section {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.bars {
+  display: flex;
+  font-size: 25px;
+  cursor: pointer; /* Added cursor pointer */
+}
+
+.link {
+  display: flex;
+  color: gray;
+  padding: 10px 15px;
+  gap: 15px;
+  transition: all 0.55s;
+}
+
+.link:hover {
+  background-color: rgb(204, 159, 255);
+  border-radius: 5px;
+  transition: all 0.55s;
+}
+
+.active {
+  background-color: rgba(204, 159, 255, 0.3);
+  border-radius: 5px;
+  color: rgb(155, 82, 229);
+}
+
+.icon,.link_text {
+  font-size: 20px;
+}
